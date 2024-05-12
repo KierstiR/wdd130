@@ -26,10 +26,10 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--primary-color);
 }
 
-header {
+/* header {
     padding: 20px;
     background-color: var(--accent1-color);
-}
+} */
 
 p {
     padding: 25px;
@@ -48,14 +48,14 @@ nav a {
     padding: 1rem;
 }
 
-nav a:link, nav a:visited {
+/* nav a:link, nav a:visited {
     color: var(--nav-link-color);
-}
+} */
 
-nav a:hover {
+/* nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
-}
+} */
 
 .hero img {
     display: block;
@@ -63,8 +63,36 @@ nav a:hover {
     height: auto;
 }
 
+.happyclients img {
+    display: block;
+    width: 25%;
+    height: auto;
+}
+
+article img {
+    position: absolute;
+    top: 450px;
+    left: 600px;
+}
+
+/* article p {
+    position: absolute;
+} */
+
+.happyclients p, h1 {
+    position: absolute;
+    top: 450px;
+    left: 200px;
+}
+
+/* .happyclients p {
+    position: absolute;
+    top: 500px;
+    left: 200px;
+} */
+
 .rafts img {
     display: block;
-    width: 100%;
+    width: 70%;
     height: auto;
 }
