@@ -130,10 +130,41 @@ nav a:hover {
     justify-content: space-between;
 }
 
+.rafts figure {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
 .rafts img {
-    flex: 1 1 auto;
-    width: calc(20% - 1rem);
+    width: 100%;
     height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* flex: 1 1 auto;
+    width: calc(20% - 1rem);
+    height: auto; */
+}
+
+.rafts figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .rafts {
+        flex-wrap: wrap;
+    }
+}
+
+.rafts figure {
+    width: calc(50% - 1rem);
+    margin-bottom: 1rem;
+}
+
+.rafts img {
+    width: 100%
 }
 
 footer {
