@@ -24,18 +24,24 @@ body {
 }
 
 header {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
     justify-content: center;
     align-items: center;
     padding: 1rem;
     background-color: var(--secondary-color);
     margin: 1rem auto;
-    gap: 2rem;
+    padding: 10px 25%;
+    /* gap: 2rem; */
 }
 
+/* .logo {
+    padding: 0px 0px 0px 75%;
+} */
+
 .logo img {
-    display: flex;
-    justify-content: center;
+    align-self: right;
+    /* justify-content: center; */
     max-height: 100px;
 }
 
@@ -50,12 +56,16 @@ nav {
     background-color: var(--nav-background-color);
     font-size: 1.2rem;
     justify-content: center;
+    text-align: center;
 }
 
 nav a {
     color: var(--nav-link-color);
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1rem;
+    /* padding-top: 5%; */
+    /* background-color: red; */
+    align-self: center;
     transition: background-color 0.3s, color 0.3s;
 }
 
