@@ -48,13 +48,21 @@
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" rows="4" required></textarea>
                     
-                    <label for="purpose">Message Purpose:</label>
-                    <select id="purpose" name="purpose">
-                        <option value="general">General Inquiry</option>
-                        <option value="booking">Reservation Question</option>
-                        <option value="feedback">Website Suggestion</option>
-                    </select>
-                    
+                    <label>Purpose of Message:</label>
+                    <div class="radio-group">
+                        <div class="radio-item">
+                            <input type="radio" id="general-inquiry" name="purpose" value="general-inquiry" required>
+                            <label for="general-inquiry">General Inquiry</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="reservation-question" name="purpose" value="reservation-question">
+                            <label for="reservation-question">Reservation Question</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="website-suggestion" name="purpose" value="website-suggestion">
+                            <label for="website-suggestion">Website Suggestion</label>
+                        </div>
+                    </div>
                     <label for="newsletter">
                         <input type="checkbox" id="newsletter" name="newsletter"> Please Subscribe me to the monthly newsletter
                     </label>
