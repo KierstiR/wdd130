@@ -231,6 +231,8 @@ footer p {
     margin: 0;
     padding-left: 1rem;
     padding-right: 1rem;
+    display: flex;
+    align-items: center;
 }
 
 footer .sociallinks {
@@ -241,6 +243,12 @@ footer .sociallinks {
 footer .sociallinks img {
     width: 30px;
     height: auto;
+}
+
+footer .wireframe-link {
+    margin-left: 1rem;
+    color: var(--primary-color);
+    text-decoration: none;
 }
 
 /* Additional styles from about.html */
@@ -304,16 +312,24 @@ footer .sociallinks img {
     margin: 2rem 0;
 }
 
-.trip {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.trips h2, .trip-info h2 {
     text-align: center;
+}
+
+.trip {
+    flex: 1;
+    text-align: center;
+}
+
+.trip-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
 }
 
 .trip img {
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
     height: auto;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -339,12 +355,6 @@ footer .sociallinks img {
     color: var(--nav-link-color);
 }
 
-footer .wireframe-link {
-    display: block;
-    margin-top: 1rem;
-    color: var(--primary-color);
-    text-align: center;
-}
 /* Additional styles for home page */
 .hero {
     position: relative;
@@ -423,11 +433,4 @@ footer .wireframe-link {
     height: auto;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-footer .wireframe-link {
-    display: block;
-    margin-top: 1rem;
-    color: var(--primary-color);
-    text-align: center;
 }
